@@ -1,4 +1,6 @@
-package btree
+package structures
+
+import "fmt"
 
 type BinaryNode struct {
 	value int
@@ -27,5 +29,11 @@ func InsertNode(value int, tree *BinaryNode) {
 }
 
 func PrintTree(tree *BinaryNode) {
-	// Print the tree
+	if tree == nil {
+		return
+	}
+	// Print the tree inorder
+	PrintTree(tree.left)
+	fmt.Printf("%d ", tree.value)
+	PrintTree(tree.right)
 }
