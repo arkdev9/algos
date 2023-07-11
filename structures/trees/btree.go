@@ -1,4 +1,4 @@
-package structures
+package trees
 
 import "fmt"
 
@@ -36,4 +36,16 @@ func PrintTree(tree *BinaryNode) {
 	PrintTree(tree.left)
 	fmt.Printf("%d ", tree.value)
 	PrintTree(tree.right)
+}
+
+func btreeTest() {
+	tree := CreateNode(10)
+	InsertNode(30, tree)
+	InsertNode(20, tree)
+	InsertNode(60, tree)
+	InsertNode(150, tree)
+	InsertNode(15, tree)
+	InsertNode(38, tree)
+
+	PrintTree(tree)
 }
