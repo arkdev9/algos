@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(binarysearch.FindMin([]int{5, 1, 2, 3, 4}))
+	fmt.Println(binarysearch.FindTarget([]int{4, 5, 6, 7, 0, 1, 2}, 3))
 }
