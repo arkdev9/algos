@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/arkdev9/algos/stack"
+	"github.com/arkdev9/algos/rm1"
 )
 
 func main() {
-	fmt.Println(stack.IsValid("()"))
+	fmt.Println(rm1.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
 }
